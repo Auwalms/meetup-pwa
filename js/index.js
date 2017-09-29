@@ -12,7 +12,7 @@
 
     const app = {
         url:'https://api.meetup.com/2/open_events?',
-        key:'', //add your API Key here.
+        key:'git ', //add your API Key here.
         sign: true,
         page:   30,
         country: 'ng',
