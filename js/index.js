@@ -12,12 +12,12 @@
 
     const app = {
         url:'https://api.meetup.com/2/open_events?',
-        key:'git ', //add your API Key here.
+        key:'', //add your API Key here. get it from meetup.com/meetup_api/key
         sign: true,
-        page:   30,
-        country: 'ng',
-        city: 'Lagos',
-        category: 34,
+        page:   20, //events per call
+        country: '', //country goes here
+        city: '', //city goes here
+        category: 34, //34 is the category for tech, check api doc for other categories id
         template : document.querySelector('.template')
     }
     const api = `${app.url}key=${app.key}&sign=${app.sign}&photo-host=public&country=${app.country}&city=${app.city}&category=${app.category}`;
@@ -67,5 +67,6 @@
         return template;
     }
 
+    //TODO Service Worker registration code here
 })()
 
