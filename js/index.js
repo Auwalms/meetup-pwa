@@ -1,5 +1,5 @@
 (function(){
-    //credit to Christain Nwamba
+    
     Date.prototype.yyyymmdd = function() {
         let month = this.getMonth() + 1;
         let day = this.getDate();
